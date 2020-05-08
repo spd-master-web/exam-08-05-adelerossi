@@ -1,7 +1,5 @@
 /* disable these when you're done */
-.ui-grid-container-one {
-  background-image: url('/images/grid-1.png');
-}
+
 .ui-grid-container-two {
   background-image: url('/images/grid-2.png');
 }
@@ -9,3 +7,48 @@
   background-image: url('/images/grid-3.png');
 }
 /* your CSS goes here */
+
+.ui-body {
+
+
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+:focus {
+  outline: 0;
+}
+
+.ui-wrapper {
+  margin: 0 auto;
+  display: grid;
+
+}
+
+.ui-grid-container-one {
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  grid-template-rows: repeat(5,auto);
+}
+
+
+.item-grid-1 {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}
+
+.item-grid-1:nth-child(even){
+  background-color: #777;
+}
+
+.item-grid-2-red {
+  grid-column: 2/6;
+  grid-row: 2/4;
+  background-color: brown;
+
+
+}
